@@ -49,9 +49,9 @@ df = df_raw.copy()
 # ------------------------------------------------------------------------------
 # 2. CONHECIMENTO INICIAL DOS DADOS BRUTOS (Rubrica Item 1.2)
 # ------------------------------------------------------------------------------
-print("\n" + "=" * 50)
+print("\n" + "=" * 37)
 print("2. ESTRUTURA INICIAL DA BASE BRUTA")
-print("=" * 50)
+print("=" * 37)
 print(f"Número de Linhas (Observações): {df.shape[0]}")
 print(f"Número de Colunas (Atributos): {df.shape[1]}")
 
@@ -70,9 +70,9 @@ display(df.head())
 # ------------------------------------------------------------------------------
 # 3. QUALIDADE E DIAGNÓSTICO DOS DADOS (Rubrica Item 1.3)
 # ------------------------------------------------------------------------------
-print("\n" + "=" * 50)
+print("\n" + "=" * 40)
 print("3. DIAGNÓSTICO DE QUALIDADE DOS DADOS")
-print("=" * 50)
+print("=" * 40)
 
 # Verificação de NaNs explícitos
 nans = df.isnull().sum().sum()
@@ -93,9 +93,9 @@ for col in cat_cols:
 # ------------------------------------------------------------------------------
 # 4. ANÁLISE UNIVARIADA E DA CLASSE ALVO (Rubrica Items 1.4 & 1.6)
 # ------------------------------------------------------------------------------
-print("\n" + "=" * 50)
+print("\n" + "=" * 55)
 print("4. ANÁLISE UNIVARIADA & DESBALANCEAMENTO DA CLASSE ALVO")
-print("=" * 50)
+print("=" * 55)
 
 # Distribuição da Variável Alvo 'y'
 y_freq = df["y"].value_counts()
@@ -185,9 +185,9 @@ plt.show()
 # ------------------------------------------------------------------------------
 # 6. SÍNTESE DE INSIGHTS & PLANO DE LAPIDAÇÃO (Rubrica Items 1.8 & 1.9)
 # ------------------------------------------------------------------------------
-print("\n" + "=" * 50)
+print("\n" + "=" * 43)
 print("6. RESUMO DOS PRINCIPAIS INSIGHTS OBTIDOS")
-print("=" * 50)
+print("=" * 43)
 print("""
 1. DESBALANCEAMENTO: A classe alvo possui apenas 11.3% de conversão positiva ('yes').
    A acurácia não deve ser utilizada isoladamente; a otimização focará no F1-score.
