@@ -4,6 +4,7 @@
 # Métrica de Avaliação: F1-Score (Fase Preditiva Futura)
 # ==============================================================================
 
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -23,11 +24,6 @@ plt.rcParams["axes.linewidth"] = 0.8
 from google.colab import drive
 
 drive.mount("/content/drive")
-
-# Definir o caminho do arquivo no Google Drive
-# Se o arquivo estiver dentro de uma pasta específica no Drive, adicione o caminho da pasta
-# Exemplo se estiver na raiz do Drive: '/content/drive/MyDrive/bank-additional-full.csv'
-# Exemplo se estiver em uma pasta: '/content/drive/MyDrive/Trabalhos/bank-additional-full.csv'
 
 caminho_arquivo = "/content/drive/MyDrive/bank-additional-full.csv"
 
